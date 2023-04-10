@@ -18,3 +18,5 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header('Fruityvice Fruite Advice')
 fresp = requests.get('https://fruityvice.com/api/fruit/watermelon')
 streamlit.text(fresp.json())
+norm = pandas.json_normalize(fresp.json
+streamlit.dataframe(norm)
